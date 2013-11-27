@@ -1,0 +1,18 @@
+<span class="services" style="
+    position: absolute;
+    right: 161px;
+    top: 114px;
+">
+		  <if test="limFacebook:|:IPSLib::loginMethod_enabled('facebook')">
+		   <a href='{parse url="app=core&amp;module=global&amp;section=login&amp;serviceClick=facebook" base="public"}'>{parse replacement="lim_facebook"}</a>
+		  </if>
+		  <if test="limTwitter:|:IPSLib::loginMethod_enabled('twitter')">
+		   <a href='{parse url="app=core&amp;module=global&amp;section=login&amp;serviceClick=twitter" base="public"}'>{parse replacement="lim_twitter"}</a>
+		  </if>
+		  <if test="limOpenid:|:IPSLib::loginMethod_enabled('openid')">
+		   <a href='{parse url="app=core&amp;module=global&amp;section=login&amp;serviceClick=openid" base="public"}'>{parse replacement="lim_openid"}</a>
+		  </if>
+		  <if test="limWindows:|:IPSLib::loginMethod_enabled('live')">
+		   <a href='{parse url="app=core&amp;module=global&amp;section=login&amp;serviceClick=live" base="public"}'>{parse replacement="lim_windows"}</a>
+		  </if>
+		 </span>
